@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Cars</title>
+    <link rel="stylesheet" href="styleoldcar.css" />
+    <link rel="stylesheet" href="styleindex.css" />
+    <link rel="stylesheet" href="basic-style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Old / Used Cars</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Profile.html">My Profile</a>
+        <a href="Newcars.html">New Cars</a>
+        <a href="Old-cars.html">Old Cars</a>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h2>Filters</h2>
+            <div class="filter-grid">
+                <select>
+                    <option>Make (Brand)</option>
+                    <option>Toyota</option>
+                    <option>Honda</option>
+                    <option>Suzuki</option>
+                    <option>Kia</option>
+                </select>
+
+                <select>
+                    <option>Model</option>
+                    <option>Corolla</option>
+                    <option>Civic</option>
+                    <option>Cultus</option>
+                    <option>Sportage</option>
+                </select>
+
+                <select>
+                    <option>Year</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                </select>
+
+                <select>
+                    <option>Price Range</option>
+                    <option>5-10 Lakh</option>
+                    <option>10-20 Lakh</option>
+                    <option>20-30 Lakh</option>
+                </select>
+
+                <select>
+                    <option>Body Type</option>
+                    <option>Sedan</option>
+                    <option>SUV</option>
+                    <option>Hatchback</option>
+                </select>
+
+                <select>
+                    <option>Features</option>
+                    <option>Sunroof</option>
+                    <option>ABS</option>
+                    <option>Automatic</option>
+                </select>
+
+            </div>
+        </section>
+        <div class="new">
+            <h2>Available Used Cars</h2>
+        </div>
+
+
+
+        <div class="car-grid1">
+            <div class="car-card1">
+                <a href="toyta-corolla-2021-old.html#toyota-corolla-2021-old">
+                    <img src="T C 2021.png" alt="toyta-corolla-2021-old" />
+                    <div class="overlay">View Details</div>
+                    <div class="card-body">
+                        <h3>Toyota Corolla 2021</h3>
+                        <p>Price: 32 Lakh</p>
+
+                        <div class="button-container">
+                            <div class="glossy-button">
+                                <div class="chevron down"></div>
+                                <div class="chevron down second"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="car-card1">
+                <a href="honda-civic-2020 old.html">
+                    <img src="H C 2020.png">
+                    <div class="overlay">View Details</div>
+                    <div class="card-body">
+                        <h3>Honda Civic 2020</h3>
+                        <p>Price: 40 Lakh</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="car-card1">
+                <a href="suzuki-cultus-2022 old.html#suzuki-cultus-2022-old">
+                    <img src="suzuki c 2022.png">
+                    <div class="overlay">View Details</div>
+                    <div class="card-body">
+                        <h3>Suzuki Cultus 2022</h3>
+                        <p>Price: 22 Lakh</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="car-card1">
+                <a href="kia-sportage2021 old.html#kia-sportage-2021-old">
+                    <img src="Kia Sportage 2021.png">
+                    <div class="overlay">View Details</div>
+                    <div class="card-body">
+                        <h3>Kia Sportage 2021</h3>
+                        <p>Price: 65 Lakh</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Car Showroom. All Rights Reserved • Powered by Passion.</p>
+    </footer>
+    <!-- Modal (shared) -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <img class="modal-img" src="" alt="" />
+            <h3 class="modal-title"></h3>
+            <p class="modal-price"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

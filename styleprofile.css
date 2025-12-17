@@ -1,0 +1,74 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+
+/* Header */
+
+
+/* Container */
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* Sections */
+
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Section Headings */
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #151111;
+    background-color: rgb(14, 65, 160);
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.section strong {
+    color: #000000;
+    list-style-position: inside;
+}
+
+
+/* Section Paragraphs */
+
+.section p {
+    margin-bottom: 8px;
+    color: #254e9f;
+    text-align: middle;
+}
+
+
+/* Footer */
+
+body {
+    background: url('Screenshot 2025-11-14 103645.png') no-repeat center center fixed;
+    background-size: cover;
+}

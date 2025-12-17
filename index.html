@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Showroom - Home</title>
+    <link rel="stylesheet" href="styleindex.css" />
+    <link rel="stylesheet" href="basic-style.css" />
+    <link rel="stylesheet" href="footerstyle.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Car Showroom</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Profile.html">My Profile</a>
+        <a href="Newcars.html">New Cars</a>
+        <a href="Old-cars.html">Old Cars</a>
+
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h2>Welcome to Our Car Showroom</h2>
+            <p>Welcome to our premier Car Showroom, where your journey to finding the perfect vehicle begins! Our extensive collection showcases an impressive selection of both new and certified pre-owned cars, each carefully chosen to meet the diverse needs
+                of our valued customers. .</p>
+        </section>
+
+        <section class="section">
+            <h2>Featured Cars</h2>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="Screenshot 2025-11-14 055543.png" alt="Car 1" />
+                    <div class="overlay">View Details</div>
+                    <div class="card-body">
+                        <h3>Toyota Corolla 2024</h3>
+                        <p>Price: 95 Lakh</p>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="Screenshot 2025-11-14 063255.png" alt="Car 2" />
+                    <div class="overlay">View Details</div>
+                    <div class="card-body">
+                        <h3>Honda Civic 2024</h3>
+                        <p>Price: 68.8 Lakh</p>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="Screenshot 2025-11-14 063629.png" alt="Car 3" />
+                    <div class="overlay">View Details</div>
+                    <div class="card-body">
+                        <h3>Hyundai Elantra 2024</h3>
+                        <p>Price: 99.8 Lakh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Car Showroom. Your Journey Begins Here.</p>
+    </footer>
+
+    <!-- Modal for viewing car details -->
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <img class="modal-img" src="" alt="" />
+            <h3 class="modal-title"></h3>
+            <p class="modal-price"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

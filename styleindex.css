@@ -1,0 +1,297 @@
+/* Style for index.html */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Screenshot 2025-11-14 103645.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Car grid and cards */
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.car-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 300ms ease;
+}
+
+.car-card .card-body {
+    padding: 12px 14px 18px;
+}
+
+.car-card h3 {
+    margin: 8px 0 6px;
+    font-size: 1.05rem;
+}
+
+.car-card p {
+    margin: 0;
+    color: #333;
+}
+
+.car-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.car-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* overlay shown on hover */
+
+.car-card .overlay {
+    position: absolute;
+    inset: 0 0 40% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.28);
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.car-card:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+    .filter-grid {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .filter-grid select,
+    .filter-grid .submit>button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1px solid rgba(20, 20, 20, 0.08);
+        background: linear-gradient(180deg, #ffffff, #f7f9fb);
+        box-shadow: 0 4px 10px rgba(12, 20, 30, 0.04);
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+        font-weight: 600;
+    }
+    .filter-grid select:focus,
+    .filter-grid .submit>button:focus {
+        outline: none;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(12, 20, 30, 0.12);
+        border-color: #5a40a7;
+    }
+    .filter-grid select:hover,
+    .filter-grid .submit>button:hover {
+        transform: translateY(-2px);
+    }
+    .filter-grid select {
+        min-width: 140px;
+    }
+    .filter-grid .submit {
+        display: inline-block;
+    }
+    .filter-grid .submit>button {
+        background: linear-gradient(90deg, #5a40a7, #6e54c9);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    /* small-screen: stack inputs full-width */
+    @media (max-width: 720px) {
+        .filter-grid {
+            gap: 10px;
+        }
+        .filter-grid select,
+        .filter-grid .submit>button {
+            width: 100%;
+            min-width: 0;
+        }
+    }
+    background: rgba(0,
+    64,
+    128,
+    0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    color: #0c1825;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Modal styles */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    padding: 18px;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #222;
+    cursor: pointer;
+}
+
+@media (max-width: 520px) {
+    .car-card img {
+        height: 140px;
+    }
+}
+
+
+/* Support older markup variants and detail images */
+
+.car-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto 12px;
+    cursor: pointer;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.car-box img:hover {
+    transform: scale(1.03);
+}
+
+
+/* Explicit styles for older grid/class names used on Old-cars page */
+
+.car-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.car-card1 {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.car-card1 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 300ms ease;
+}
+
+.car-card1 .card-body {
+    padding: 12px 14px 18px;
+}
+
+.car-card1 h3 {
+    margin: 8px 0 6px;
+    font-size: 1.05rem;
+}
+
+.car-card1 p {
+    margin: 0;
+    color: #333;
+}
+
+.car-card1:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.car-card1:hover img {
+    transform: scale(1.06);
+}
+
+.car-card1 .overlay {
+    position: absolute;
+    inset: 0 0 40% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.28);
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.car-card1:hover .overlay {
+    opacity: 1;
+}

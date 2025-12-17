@@ -1,0 +1,90 @@
+/* Style for newcars.html */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e6ffe6;
+}
+
+body {
+    background-image: url('Screenshot 2025-11-14 103539.png');
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 22px;
+}
+
+.section {
+    background: rgb(12, 98, 191);
+    color: #070fa9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    margin-bottom: 15px;
+    padding: auto;
+}
+
+select {
+    padding: 8px;
+    background-color: #282d94;
+    border: 1px solid #741a07;
+    shape-outside: circle();
+    font-size: 1rem;
+    color: #600e0e;
+    box-shadow: inset 0 1px 3px rgba(174, 106, 3, 0.718);
+}
+
+.section h2 {
+    color: #0c1825;
+    margin-bottom: 15px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.submit button {
+    display: grid;
+    gap: 20px;
+    background-color: #9b0913;
+    color: rgb(236, 18, 236);
+    position: relative;
+    text-size-adjust: inherit;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: x-large;
+    left: 71%;
+    border-radius: 4px 65px;
+    text-transform: capitalize;
+}
+
+.new h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3bab03;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 6px;
+}
