@@ -35,7 +35,7 @@ nav {
 
 .section {
     background: rgb(12, 98, 191);
-    color: #070fa9;
+    color: #2229b0;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -49,8 +49,8 @@ nav {
 
 select {
     padding: 8px;
-    background-color: #282d94;
-    border: 1px solid #741a07;
+    background-color: #1269c6ce;
+    border: 1px solid #0cb1a0;
     shape-outside: circle();
     font-size: 1rem;
     color: #600e0e;
@@ -96,4 +96,5 @@ select {
 body {
   background: url('Screenshot 2025-11-28 095054.png') no-repeat center center fixed;
   background-size: cover;
+
 }
