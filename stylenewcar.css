@@ -18,8 +18,8 @@ body {
 }
 
 .section {
-    background: rgb(12, 98, 191);
-    color: #070fa9;
+    background: rgb(33, 127, 227);
+    color: #2229b0;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -32,9 +32,10 @@ body {
 }
 
 select {
-    padding: 8px;
-    background-color: #282d94;
-    border: 1px solid #741a07;
+     padding: 8px;
+    margin: auto;
+    background-color: #1269c6ce;
+    border: 1px solid #0cb1a0;
     shape-outside: circle();
     font-size: 1rem;
     color: #600e0e;
@@ -49,20 +50,6 @@ select {
     font-weight: 600;
 }
 
-.submit button {
-    display: grid;
-    gap: 20px;
-    background-color: #9b0913;
-    color: rgb(236, 18, 236);
-    position: relative;
-    text-size-adjust: inherit;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    font-size: x-large;
-    left: 71%;
-    border-radius: 4px 65px;
-    text-transform: capitalize;
-}
 
 .new h2 {
     text-align: center;
